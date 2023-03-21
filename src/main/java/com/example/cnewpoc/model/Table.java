@@ -7,15 +7,9 @@ import lombok.Data;
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 
-public class Result {
+public class Table {
 
-    @JsonProperty("Key")
-    public String key;
-    @JsonProperty("Value")
-    public String value;
-    @JsonProperty("ValueType")
-    public String valueType;
 //    public Metadata __metadata;
-    @JsonProperty("Cells")
-    public Cells cells;
+    @JsonProperty("Rows")
+    public Rows rows;
 }

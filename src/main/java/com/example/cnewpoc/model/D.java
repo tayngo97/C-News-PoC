@@ -1,13 +1,12 @@
 package com.example.cnewpoc.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-import java.util.ArrayList;
+@Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 
 public class D {
-    public ArrayList<Result> results;
 
-    @JsonProperty("CanvasContent1")
-    public String canvasContent1;
+    public Query query;
 }
