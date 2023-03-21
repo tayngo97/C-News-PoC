@@ -8,4 +8,8 @@ import lombok.Data;
 
 public class Metadata {
     public String type;
+
+    public String id;
+    public String uri;
+    public String etag;
 }

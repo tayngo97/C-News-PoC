@@ -18,4 +18,11 @@ public class Result {
 //    public Metadata __metadata;
     @JsonProperty("Cells")
     public Cells cells;
+
+    @JsonProperty("ListItemAllFields")
+    public ListItemAllFields listItemAllFields;
+
+    @JsonProperty("UniqueId")
+    public String uniqueId;
+
 }
